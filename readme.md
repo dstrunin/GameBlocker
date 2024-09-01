@@ -1,39 +1,62 @@
 # Game Blocker
 
-A Python script to track and limit daily game playtime.
+Game Blocker is a Python application that helps users manage their gaming time by setting daily time limits for specified games.
 
 ## Features
 
-- Tracks hours and minutes played per day
-- Shuts down the game when daily limit is reached
-- Provides sound notifications:
-  - 20 minutes before shutdown
-  - 5 minutes before shutdown
-
-## Usage
-
-1. Set your daily time limit in the script
-2. Run the script before starting your game
-3. The script will monitor playtime and enforce the limit
+- Set daily time limits for gaming
+- Track multiple games
+- Visual progress bar showing time used
+- Sound notifications when approaching the time limit
+- Automatically closes games when the time limit is reached
+- Persists time limits and usage across application restarts
 
 ## Requirements
 
 - Python 3.x
-- [Additional dependencies, if any]
+- tkinter (usually comes pre-installed with Python)
+- psutil
 
-## Setup
+## Installation
 
-1. Clone the repository
-2. Install required dependencies: `pip install -r requirements.txt`
-3. Configure game executable path and time limit in `config.py`
+1. Clone this repository or download the source code.
+2. Install the required dependencies:
 
-## Running the Script
+   ```bash
+   pip install psutil
+   ```
 
-1. Run the script: `python game_blocker.py`
-2. The script will start monitoring playtime
-3. If the daily limit is reached, the game will be automatically shut down
+## Usage
 
-## Configuration
+1. Run the application:
 
-- `game_path`: Path to the game executable
-- `daily_limit`: Daily playtime limit (hours)
+   ```bash
+   python game_blocker.py
+   ```
+
+2. When first launched, you'll be prompted to set a daily time limit.
+3. Use the "Add Game" button to select executable files of games you want to track.
+4. The application will monitor the specified games and track your playing time.
+5. When your daily limit is reached, the application will automatically close the game.
+
+## How it works
+
+- The application monitors running processes to detect when tracked games are running.
+- It accumulates the time spent playing these games.
+- Sound notifications are played when approaching the time limit (in the last 15 seconds).
+- The progress bar and time display update in real-time to show remaining time.
+- Game processes are forcefully terminated when the time limit is reached.
+
+## Notes
+
+- The application saves your time limit and game list, so you don't need to re-enter this information every time you start the program.
+- The time limit resets at midnight each day.
+- You can modify the time limit by closing and reopening the application (it will prompt for a new limit if it's a new day).
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome. Feel free to check the issues page if you want to contribute.
+
+## License
+
+This project is open source and available under the [MIT License](https://opensource.org/licenses/MIT).
