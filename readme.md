@@ -52,6 +52,7 @@ Game Blocker is a Python application that helps users manage their gaming time b
 - The application saves your time limit and game list, so you don't need to re-enter this information every time you start the program.
 - The time limit resets at midnight each day.
 - You can modify the time limit by closing and reopening the application (it will prompt for a new limit if it's a new day).
+- This application has been tested on Windows 10 only. Compatibility with other operating systems is not guaranteed.
 
 ## Contributing
 
