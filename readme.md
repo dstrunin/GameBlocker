@@ -13,11 +13,19 @@ Game Blocker is a Python application that helps users manage their gaming time b
 
 ## Requirements
 
-- Python 3.x
+- Windows 10 (for .exe version)
+- Python 3.x (for running from source)
 - tkinter (usually comes pre-installed with Python)
 - psutil
 
 ## Installation
+
+### Option 1: Executable Version (Windows only)
+
+1. Download the `game_blocker.exe` file from the releases section.
+2. No installation required - the .exe file can be run directly.
+
+### Option 2: Running from Source
 
 1. Clone this repository or download the source code.
 2. Install the required dependencies:
@@ -28,16 +36,23 @@ Game Blocker is a Python application that helps users manage their gaming time b
 
 ## Usage
 
+### Option 1: Running the Executable (Windows only)
+
+1. Double-click the `game_blocker.exe` file to run the application.
+2. When first launched, you'll be prompted to set a daily time limit.
+3. Use the "Add Game" button to select executable files of games you want to track.
+4. The application will monitor the specified games and track your playing time.
+5. When your daily limit is reached, the application will automatically close the game.
+
+### Option 2: Running from Source
+
 1. Run the application:
 
    ```bash
    python game_blocker.py
    ```
 
-2. When first launched, you'll be prompted to set a daily time limit.
-3. Use the "Add Game" button to select executable files of games you want to track.
-4. The application will monitor the specified games and track your playing time.
-5. When your daily limit is reached, the application will automatically close the game.
+2. Follow steps 2-5 from Option 1.
 
 ## How it works
 
