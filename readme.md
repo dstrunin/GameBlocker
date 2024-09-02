@@ -22,7 +22,7 @@ Game Blocker is a Python application that helps users manage their gaming time b
 
 ### Option 1: Executable Version (Windows only)
 
-1. Download the 'game_blocker_windows_exe.zip' zip file and extract anywhere. Double click on the 'game_blocker.exe' file to run the application.
+1. Download the 'game_blocker_windows_exe.zip' file and extract anywhere. Double click on the 'game_blocker.exe' file to run the application.
 2. No installation required - the .exe file can be run directly.
 
 ### Option 2: Running from Source
